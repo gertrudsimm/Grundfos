@@ -7,57 +7,59 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+  <header>
+    <h1>Sign up</h1>
+  </header>
+  <form id="regForm" name="newUserForm">
+    <!-- One "tab" for each step in the form: -->
 
-  <header class="grid-container">
+    <!-- Circles which indicates the steps of the form: -->
+    <div id="progress">
+          <span class="step"></span><hr>
+            <span class="step"></span><hr>
+            <span class="step"></span><hr>
+            <span class="step"></span>
+    </div>
 
-      <section class="nav-col">
-        <nav class="tabbar">
-          <a href="#home" onclick="count()" id="next" class="active">Næste</a>
-        </nav>
-      </section>
- 
-    </header>
+    <section class="tab">
 
-
-    <!-- pages -->
-    <!-- home page -->
-    <section id="home" class="page">
-      <header class="topbar">
-        <h2>Home</h2>
-      </header>
-      <p>My Single Page Web App Template</p>
+      <p><input placeholder="First name..."></p>
+      <p><input placeholder="Last name..."></p>
+      <p><input placeholder="Country"></p>
+      <p><input placeholder="Company"></p>
     </section>
 
-    <!-- about page -->
-    <section id="about" class="page">
-      <header class="topbar">
-        <h2>About</h2>
-      </header>
-      <p>This is my about page</p>
+    <section class="tab">
+
+      <p><input placeholder="E-mail..."></p>
+      <p><input placeholder="Password"></p>
     </section>
 
-    <!-- clients page -->
-    <section id="clients" class="page">
-      <header class="topbar">
-        <h2>Clients</h2>
-      </header>
-      <p>Hmm, there should be some clients right here...</p>
+    <section class="tab">
+
+      <p><input placeholder="Job role"></p>
+
     </section>
 
-    <!-- contact page -->
-    <section id="contact" class="page">
-      <header class="topbar">
-        <h2>Contact</h2>
-      </header>
-      <p>So, contact info?</p>
-      <p><a href="mailto:race@eaaa.dk">race@eaaa.dk</a></p>
-      <a href="http://cederdorff.com" target="_blank">
-        <img src="img/logo.png" alt="Cederdorff logo" class="logo">
-      </a>
+    <section class="tab">
+
+      <p><input placeholder="Areas of interest"></p>
     </section>
 
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
 
-<script src="script/main.js" charset="utf-8"></script>
+
+
+  </form>
+  <!-- main js file -->
+  <script src="script/main.js"></script>
 </body>
+
 </html>

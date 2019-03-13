@@ -1,23 +1,11 @@
-:root {
-  --green: rgb(38, 76, 89);
-  --light-green: rgb(172, 198, 201);
-  --light-grey: #f1f1f4;
-  --text-color-light: #f1f1f1;
-  --text-color-dark: #333;
-}
-
-/* ---------- general styling ---------- */
 html {
-  color: var(--text-color-dark);
+  color: #333;
+  display: table;
   font-family: Helvetica, Arial, sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
   font-weight: 200;
-}
-
-body {
-  margin: 0;
 }
 
 h1 {
@@ -26,92 +14,66 @@ h1 {
   letter-spacing: 3px;
 }
 
-/* ---------- Grid container ---------- */
-.grid-container {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
 }
 
-/* ---------- topbar styling ---------- */
-.topbar {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
-  padding: 13.5px;
-  text-transform: uppercase;
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 80%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
 }
 
-.topbar h2 {
-  margin: 0;
-  font-weight: 300;
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
 }
 
-/* ---------- header styling ---------- */
-header {
-  background-color: var(--green);
-}
-
-.img-col img {
-  max-width: 200px;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-}
-
-.grid-container section {
-  position: relative;
-}
-
-/* ---------- tabbar styling ---------- */
-.tabbar {
-  position: fixed;
-	bottom: 0;
-	left: 0;
-  margin: auto;
-  width: 100%;
-}
-
-/* Style the links inside the navigation bar */
-.tabbar a {
-  display: inline-block;
-  color: var(--text-color-light);
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
-}
-
-/* Add a color to the active/current link */
-.tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
-}
-
-/* ---------- page styling ---------- */
-.page {
+/* Hide all steps by default: */
+.tab {
   display: none;
-  background: var(--light-grey);
-  animation: fadeIn 0.4s;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+   float: left;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
 }
 
 
-
-
-/* ---------- animations ---------- */
-/* fade in */
-@keyframes fadeIn {
-  from {
-    opacity: 0
+hr {
+  border:none;
+  border-top:1px solid;/* or bottom */
+  margin-top: 7.5px; /* 15% or whatever fixed or % value that suits your needs*/
+  width: 10%;
+  float: left;
   }
 
-  to {
-    opacity: 1
-  }
-}
+  #progress {text-align: center;
+  padding-left: 35%;
+padding-bottom: 2%;}
