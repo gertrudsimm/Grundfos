@@ -8,33 +8,39 @@ function hideAllPages() {
   }
 }
 
-// show page or tab
-function showPage(pageId) {
-  hideAllPages();
-  document.querySelector(`#${pageId}`).style.display = "block";
-  setActiveTab(pageId);
-}
 
 // set default page
 function setDefaultPage() {
   let page = "home";
   if (location.hash) {
     page = location.hash.slice(1);
-  }
-  showPage(page);
-}
-
-// sets active tabbar/ menu item
-function setActiveTab(pageId) {
-  let pages = document.querySelectorAll(".tabbar a");
-  for (let page of pages) {
-    if ("#" + pageId === page.getAttribute("href")) {
-      page.classList.add("active");
-    } else {
-      page.classList.remove("active");
-    }
-
+	  hideAllPages();
+  document.querySelector(`#${page}`).style.display = "block";
   }
 }
+
 
 setDefaultPage();
+
+
+// go to next page
+
+
+let i = 0;
+
+
+
+function count(){
+     i++;
+	console.log(i)
+	hideAllPages();
+	
+	if(i === 1 ){
+  document.querySelector(`#about`).style.display = "block";
+	} else if(i === 2) {   document.querySelector(`#clients`).style.display = "block";
+	} else if(i === 3) {   document.querySelector(`#contact`).style.display = "block";
+	} else if(i === 4) {   document.querySelector(`#home`).style.display = "block";
+	i = 0;
+	}
+}
+

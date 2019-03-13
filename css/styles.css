@@ -63,9 +63,9 @@ header {
 
 /* ---------- tabbar styling ---------- */
 .tabbar {
-  background-color: var(--green);
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+	bottom: 0;
+	left: 0;
   margin: auto;
   width: 100%;
 }
@@ -101,18 +101,8 @@ header {
   animation: fadeIn 0.4s;
 }
 
-/* ---------- logo styling ---------- */
-.logo {
-  margin: 2em auto;
-  width: 100%;
-  max-width: 300px;
-}
 
-.logo-col .logo {
-  padding: 1.5em 0;
-  /* max-width: 150px; */
-  margin: 0;
-}
+
 
 /* ---------- animations ---------- */
 /* fade in */
