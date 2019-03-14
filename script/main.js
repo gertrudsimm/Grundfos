@@ -77,6 +77,5 @@ let inputs = document.querySelectorAll('input')
 for (let input of inputs) {
   input.addEventListener('input', function() {
     this.classList.remove('error');
-    errorMessage.innerHTML = "";
   });
 }

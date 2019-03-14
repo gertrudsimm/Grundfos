@@ -1,3 +1,14 @@
+:root {
+  --header-blue: #11497B;
+  --header-text: #ABBFCF;
+  --blue: #009EE3;
+  --blue-opacity: #34648F;
+  --border-blue: #0068B4;
+  --grey: #C9C9C9;
+  --background: #F2F2F2;
+}
+
+
 html {
   color: #333;
   display: table;
@@ -16,7 +27,6 @@ h1 {
 
 /* Style the form */
 #regForm {
-  background-color: #ffffff;
   margin: 100px auto;
   padding: 40px;
   width: 70%;
@@ -25,12 +35,27 @@ h1 {
 
 
 /* Style the input fields */
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 input {
   padding: 10px;
   width: 80%;
   font-size: 17px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid var(--blue);
 }
+
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
@@ -46,34 +71,32 @@ input.invalid {
 .step {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
+  margin: 0;
+  border-style: solid;
+  border-color: var(--blue);
   border-radius: 50%;
   display: inline-block;
-  opacity: 0.5;
-   float: left;
 }
 
 /* Mark the active step: */
 .step.active {
-  opacity: 1;
+  background-color: var(--blue);
 }
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #4CAF50;
+  background-color: var(--blue);
 }
 
 
 hr {
-  border:none;
+  display: inline-block;
+  border: none;
   border-top:1px solid;/* or bottom */
-  margin-top: 7.5px; /* 15% or whatever fixed or % value that suits your needs*/
+  padding-top: 9px; /* 15% or whatever fixed or % value that suits your needs*/
+margin: 0;
+margin-right: -5px;
   width: 10%;
-  float: left;
-  }
+  color: var(--blue);
 
-  #progress {text-align: center;
-  padding-left: 35%;
-padding-bottom: 2%;}
+  }
