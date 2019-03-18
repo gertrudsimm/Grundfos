@@ -100,3 +100,8 @@ margin-right: -5px;
   color: var(--blue);
 
   }
+.icons {
+  width: 25%;
+  border: 2px solid black;
+  padding: 5px;
+}
