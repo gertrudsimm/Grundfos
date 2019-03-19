@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -36,55 +37,112 @@
 
     <section class="tab">
       <h2>Job Role</h2>
-      <div class="container">
-<img src="img/chef1.PNG" alt="icon"><p>Distriturbor</p></div>
 
 
-<div class="container">
-<img src="img/Håndværker1.PNG" alt="icon"><p>Techinal director</p></div>
-<div class="container">
-<img src=img/chefikon.PNG alt="icon"><p>Installer</p></div>
+      <div class="row">
+        <div class="column">
+          <label class="image-checkbox" title="role">
+      <img src="img/chef1.PNG" alt="icon"><p>Distriturbor</p>
+      <input type="checkbox" name="team[]" value="role"/>
+          </label></div>
+
+<div class="column">
+    <label class="image-checkbox" title="role">
+      <img src="img/Håndværker1.PNG" alt="icon"><p>Techinal director</p>
+      <input type="checkbox" name="team[]" value="role" />
+          </label>
+</div>
+
+<div class="column">
+  <label class="image-checkbox" title="role">
+
+<img src=img/chefikon.PNG alt="icon"><p>Installer</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label>
+</div></div>
+
 <br>
-<div class="container">
-<img src="img/Håndværkerikon.PNG" alt="icon"><p>House owner</p></div>
+<div class="row">
+  <div class="column">
+    <label class="image-checkbox" title="role">
 
-<div class="container">
-<img src="img/chef1.PNG" alt="icon"><p>Counsulting Engineer</p></div>
+      <img src="img/Håndværkerikon.PNG" alt="icon"><p>House owner</p>
+      <input type="checkbox" name="team[]" value="role" />
+          </label>
+</div>
+<div class="column">
+  <label class="image-checkbox" title="role">
 
-<div class="container">
-<img src="img/Håndværker1.PNG" alt="icon"><p>Techinal Engineer</p></div>
+<img src="img/chef1.PNG" alt="icon"><p>Counsulting Engineer</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label></div>
+<div class="column">
+  <label class="image-checkbox" title="role">
+
+<img src="img/Håndværker1.PNG" alt="icon"><p>Techinal Engineer</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label>
+</div></div>
 
     </section>
 
     <section class="tab">
 
       <h2>Tell us about your area of interest</h2>
-      <div class="area-container">
-<img class="icons" src="img/home.png" alt="">
-<p>Private home</p></div>
+<div class="row">
+  <div class="column-2">
+    <label class="image-checkbox" title="role">
 
-<div class="area-container">
+<img class="icons" src="img/home.png" alt="">
+<p>Private home</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label>
+</div>
+
+<div class="column-2">
+  <label class="image-checkbox" title="role">
 
 <img class="icons" src="img/faucet-side-view-with-falling-drop-of-water.png" alt="">
-<p>Waste water</p></div>
+<p>Waste water</p>
+<input type="checkbox" name="team[]" value="role"/>
+    </label>
+</div>
 
-<div class="area-container">
+<div class="column-2">
+  <label class="image-checkbox" title="role">
 
 <img class="icons" src="img/commercial-buldings.png" alt="">
-<p>Commercial buldings</p></div>
-
+<p>Commercial buldings</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label>
+</div>
 <br>
-<div class="area-container">
+
+<div class="column-2">
+  <label class="image-checkbox" title="role">
+
 <img class="icons" src="img/factory.png" alt="">
-<p> Industrial process</p></div>
+<p> Industrial process</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label>
+</div>
 
-<div class="area-container">
-<img class="icons" src="img/engineer.png" alt="">
-<p>Water supply</p></div>
+<div class="column-2">
+  <label class="image-checkbox" title="role">
 
-<div class="area-container">
+<img class="icons" src="img/waves.png" alt="">
+<p>Water supply</p>
+<input type="checkbox" name="team[]" value="role"/>
+    </label></div>
+
+
+<div class="column-2">
+  <label class="image-checkbox" title="role">
+
 <img class="icons" src="img/factory(1).png" alt="">
-<p>Industrial utilities</p></div>
+<p>Industrial utilities</p>
+<input type="checkbox" name="team[]" value="role" />
+    </label></div>
     </section>
 
     <div style="overflow:auto;">
@@ -99,6 +157,7 @@
   </form>
   <!-- main js file -->
   <script src="script/main.js"></script>
+
 </body>
 
 </html>
