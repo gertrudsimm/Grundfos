@@ -27,6 +27,7 @@ h1 {
 
 /* Style the form */
 #regForm {
+  font-family: Helvetica, Arial, sans-serif;
   margin: 100px auto;
   padding: 40px;
   width: 70%;
@@ -62,6 +63,18 @@ input.invalid {
   background-color: #ffdddd;
 }
 
+button {
+background-color: var(--blue);
+color: #ffffff;
+border: none;
+padding: 10px 20px;
+font-size: 17px;
+cursor: pointer;}
+
+#prevBtn {
+  background-color: var(--grey);
+}
+
 /* Hide all steps by default: */
 .tab {
   display: none;
@@ -92,8 +105,8 @@ input.invalid {
 hr {
   display: inline-block;
   border: none;
-  border-top:1px solid;/* or bottom */
-  padding-top: 9px; /* 15% or whatever fixed or % value that suits your needs*/
+  border-top:1px solid;
+  padding-top: 7.5px;
 margin: 0;
 margin-right: -5px;
   width: 10%;
