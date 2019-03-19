@@ -41,7 +41,6 @@ function nextPrev(n) {
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
-
 function validateForm() {
   // This function deals with validation of the form fields
   let x, y, i, valid = true;
@@ -57,6 +56,7 @@ function validateForm() {
       valid = false;
     }
   }
+
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";

@@ -11,8 +11,11 @@
 
 <body>
   <header>
-    <h1>Sign up, GERTRUD</h1>
+    <div class="logo">
+<img src="img/logo (1).png">
+</div>
   </header>
+    <h1>Sign up</h1>
   <form id="regForm" name="newUserForm">
     <!-- One "tab" for each step in the form: -->
 
@@ -36,7 +39,12 @@
     </section>
 
     <section class="tab">
-      <h2>Job Role</h2>
+      <div class="description">
+      <h2>Tell us about your job role</h2>
+      <p>We know that you are busy, and your time is precious. By choosing
+your jobrole you make sure you are only getting the material, that
+is relevant for you and your work. </p>
+</div>
 
 
       <div class="row">
@@ -44,7 +52,7 @@
           <label class="image-checkbox" title="role">
       <img src="img/chef1.PNG" alt="icon"><p>Distriturbor</p>
       <input type="checkbox" name="team[]" value="role"/>
-          </label></div>
+    </label></div>
 
 <div class="column">
     <label class="image-checkbox" title="role">
@@ -65,7 +73,6 @@
 <div class="row">
   <div class="column">
     <label class="image-checkbox" title="role">
-
       <img src="img/Håndværkerikon.PNG" alt="icon"><p>House owner</p>
       <input type="checkbox" name="team[]" value="role" />
           </label>
@@ -145,7 +152,7 @@
     </label></div>
     </section>
 
-    <div style="overflow:auto;">
+    <div style="overflow:auto;" class="buttons">
       <div style="float:right;">
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
         <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
