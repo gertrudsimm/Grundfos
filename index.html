@@ -48,48 +48,63 @@ is relevant for you and your work. </p>
 
 
       <div class="row">
+
         <div class="column">
+          <img src="img/check.png" alt="icon" id="che1" class="ch che">
           <label class="image-checkbox" title="role">
-      <img src="img/chef1.PNG" alt="icon"><p>Distriturbor</p>
-      <input type="checkbox" name="team[]" value="role"/>
-    </label></div>
+      <img src="img/chef1.PNG" alt="icon" id="Distriturbor"><p>Distriturbor</p>
+      <input type="checkbox" name="team[]" value="role" class="show" onclick="active(this, 'Distriturbor', 'che1')"/>
+    </label>
+  </div>
 
 <div class="column">
+  <img src="img/check.png" alt="icon" id="che2" class="ch che">
     <label class="image-checkbox" title="role">
-      <img src="img/Håndværker1.PNG" alt="icon"><p>Techinal director</p>
-      <input type="checkbox" name="team[]" value="role" />
+      <img src="img/Håndværker1.PNG" alt="icon" id="Techinal" ><p>Techinal director</p>
+      <input type="checkbox" name="team[]" value="role" class="show" onclick="active(this, 'Techinal', 'che2')"/>
           </label>
 </div>
 
 <div class="column">
+
+<img src="img/check.png" alt="icon" id="che3" class="ch che">
   <label class="image-checkbox" title="role">
 
-<img src=img/chefikon.PNG alt="icon"><p>Installer</p>
-<input type="checkbox" name="team[]" value="role" />
+<img src=img/chefikon.PNG alt="icon" id="Installer"><p>Installer</p>
+<input type="checkbox" name="team[]" value="role" class="show" onclick="active(this, 'Installer', 'che3')"/>
     </label>
-</div></div>
+</div>
+</div>
 
 <br>
 <div class="row">
+
   <div class="column">
+    <img src="img/check.png" alt="icon" id="che4" class="ch che">
     <label class="image-checkbox" title="role">
-      <img src="img/Håndværkerikon.PNG" alt="icon"><p>House owner</p>
-      <input type="checkbox" name="team[]" value="role" />
+      <img src="img/Håndværkerikon.PNG" alt="icon" id="owner"><p>House owner</p>
+      <input type="checkbox" name="team[]" value="role" class="show" onclick="active(this, 'owner', 'che4')"/>
           </label>
 </div>
+
 <div class="column">
+  <img src="img/check.png" alt="icon" id="che5" class="ch che">
   <label class="image-checkbox" title="role">
 
-<img src="img/chef1.PNG" alt="icon"><p>Counsulting Engineer</p>
-<input type="checkbox" name="team[]" value="role" />
-    </label></div>
-<div class="column">
-  <label class="image-checkbox" title="role">
-
-<img src="img/Håndværker1.PNG" alt="icon"><p>Techinal Engineer</p>
-<input type="checkbox" name="team[]" value="role" />
+<img src="img/chef1.PNG" alt="icon" id="Counsulting"><p>Counsulting Engineer</p>
+<input type="checkbox" name="team[]" value="role" class="show" onclick="active(this, 'Counsulting', 'che5')"/>
     </label>
-</div></div>
+  </div>
+
+<div class="column">
+  <img src="img/check.png" alt="icon" id="che6" class="ch che">
+  <label class="image-checkbox" title="role">
+
+<img src="img/Håndværker1.PNG" alt="icon" id="Engineer"><p>Techinal Engineer</p>
+<input type="checkbox" name="team[]" value="role" class="show" onclick="active(this, 'Engineer', 'che6')"/>
+    </label>
+</div>
+</div>
 
     </section>
 
@@ -97,60 +112,69 @@ is relevant for you and your work. </p>
 
       <h2>Tell us about your area of interest</h2>
 <div class="row">
-  <div class="column-2">
-    <label class="image-checkbox" title="role">
 
-<img class="icons" src="img/home.png" alt="">
-<p>Private home</p>
-<input type="checkbox" name="team[]" value="role" />
-    </label>
+
+    <div class="column-2" id="icon1">
+      <img src="img/check.png" alt="icon" id="ch1" class="ch">
+      <label class="image-checkbox" title="role">
+        <img class="icons" src="img/home.png" alt="icon">
+        <p>Private home</p>
+        <input type="checkbox" name="team[]" value="role" class="show" onclick="active2(this, 'icon1', 'ch1')"/>
+      </label>
+    </div>
+
+
+
+    <div class="column-2" id="icon2">
+      <img src="img/check.png" alt="icon" id="ch2" class="ch">
+      <label class="image-checkbox" title="role">
+        <img class="icons" src="img/faucet-side-view-with-falling-drop-of-water.png" alt="icon">
+        <p>Waste water</p>
+        <input type="checkbox" name="team[]" value="role" class="show" onclick="active2(this, 'icon2', 'ch2')"/>
+      </label>
+    </div>
+
+    <div class="column-2" id="icon3">
+      <img src="img/check.png" alt="icon" id="ch3" class="ch">
+      <label class="image-checkbox" title="role">
+        <img class="icons" src="img/commercial-buldings.png" alt="icon">
+        <p>Commercial buldings</p>
+        <input type="checkbox" name="team[]" value="role" class="show" onclick="active2(this, 'icon3', 'ch3')"/>
+      </label>
+    </div>
 </div>
 
-<div class="column-2">
-  <label class="image-checkbox" title="role">
 
-<img class="icons" src="img/faucet-side-view-with-falling-drop-of-water.png" alt="">
-<p>Waste water</p>
-<input type="checkbox" name="team[]" value="role"/>
-    </label>
-</div>
+  <div class="row">
 
-<div class="column-2">
-  <label class="image-checkbox" title="role">
+    <div class="column-2" id="icon4">
+      <img src="img/check.png" alt="icon" id="ch4" class="ch">
+      <label class="image-checkbox" title="role">
+        <img class="icons" src="img/factory.png" alt="icon">
+        <p>Industrial process</p>
+        <input type="checkbox" name="team[]" value="role" class="show" onclick="active2(this, 'icon4', 'ch4')"/>
+      </label>
+    </div>
 
-<img class="icons" src="img/commercial-buldings.png" alt="">
-<p>Commercial buldings</p>
-<input type="checkbox" name="team[]" value="role" />
-    </label>
-</div>
-<br>
+    <div class="column-2" id="icon5">
+      <img src="img/check.png" alt="icon" id="ch5" class="ch">
+      <label class="image-checkbox" title="role">
+        <img class="icons" src="img/waves.png" alt="icon">
+        <p>Water supply</p>
+        <input type="checkbox" name="team[]" value="role" class="show" onclick="active2(this, 'icon5', 'ch5')"/>
+      </label>
+    </div>
 
-<div class="column-2">
-  <label class="image-checkbox" title="role">
-
-<img class="icons" src="img/factory.png" alt="">
-<p> Industrial process</p>
-<input type="checkbox" name="team[]" value="role" />
-    </label>
-</div>
-
-<div class="column-2">
-  <label class="image-checkbox" title="role">
-
-<img class="icons" src="img/waves.png" alt="">
-<p>Water supply</p>
-<input type="checkbox" name="team[]" value="role"/>
-    </label></div>
-
-
-<div class="column-2">
-  <label class="image-checkbox" title="role">
-
-<img class="icons" src="img/factory(1).png" alt="">
-<p>Industrial utilities</p>
-<input type="checkbox" name="team[]" value="role" />
-    </label></div>
-    </section>
+    <div class="column-2" id="icon6">
+      <img src="img/check.png" alt="icon" id="ch6" class="ch">
+      <label class="image-checkbox" title="role">
+        <img class="icons" src="img/factory(1).png" alt="icon">
+        <p>Industrial utilities</p>
+        <input type="checkbox" name="team[]" value="role" class="show" onclick="active2(this, 'icon6', 'ch6')"/>
+        </label>
+    </div>
+  </div>
+</section>
 
     <div style="overflow:auto;" class="buttons">
       <div style="float:right;">

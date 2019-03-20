@@ -81,3 +81,47 @@ for (let input of inputs) {
     this.classList.remove('error');
   });
 }
+
+//----Selection of jobrole/intrests checkbox----//
+
+function active(el, id, id2){
+let pic = document.getElementById(id);
+let ch = document.getElementById(id2);
+
+  if(el.className!="no-show")
+      {
+         el.className="no-show";
+         pic.style.filter = 'brightness(50%)';
+         ch.style.display = 'block';
+
+      }
+      else if(el.className=="no-show")
+      {
+         pic.style.filter = 'brightness(100%)';
+         el.className="show";
+         ch.style.display = 'none';
+      }
+
+      return false;
+};
+
+function active2(el, id, id2){
+let pic = document.getElementById(id);
+let ch = document.getElementById(id2);
+
+  if(el.className!="no-show")
+      {
+         el.className="no-show";
+         pic.style.background = 'grey';
+         ch.style.display = 'block';
+
+      }
+      else if(el.className=="no-show")
+      {
+         pic.style.background = 'white';
+         el.className="show";
+         ch.style.display = 'none';
+      }
+
+      return false;
+};
