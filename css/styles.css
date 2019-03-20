@@ -8,6 +8,13 @@
   --background: #F2F2F2;
 }
 
+@font-face {
+  font-family: grundfosFont;
+  src: url(../font/GrundfosTheSansV2OT-3L.otf) format("opentype"),
+      url(../font/GrundfosTheSansV2OT-3L.woff) format("woff"),
+      url(../font/GrundfosTheSansV2OT-3L.woff2) format("woff2");
+}
+
 body {
   background-color: #F2F2F2;
   margin: 0;
@@ -26,7 +33,7 @@ header {
 html {
   color: #333;
   display: table;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "grundfosFont", sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -56,7 +63,6 @@ h2 {
 
 /* Style the form */
 #regForm {
-  font-family: Grundfos TheSans V2 OT 3L;
   margin: 20px auto;
   padding: 40px;
   width: 50%;
@@ -115,6 +121,7 @@ cursor: pointer;}
 
 #prevBtn {
   background-color: var(--blue);
+  font-family: "grundfosFont", sans-serif;
 }
 
 #skipBtn {
@@ -123,7 +130,10 @@ cursor: pointer;}
   background-color: var(--background);
   border: solid 2px var(--grey);
   color: var(--grey);
+  font-family: "grundfosFont", sans-serif;
 }
+
+#nextBtn {font-family: "grundfosFont", sans-serif;}
 
 .row {
   margin-top: 5%;
